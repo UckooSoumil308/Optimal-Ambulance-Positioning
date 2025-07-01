@@ -1,0 +1,45 @@
+Optimal Ambulance Positioning for Road Accidents With Deep Embedded Clustering
+
+
+IEEE Transaction on Deep Learning,Volume:11,Issue Date:09.June.2023
+
+
+Deep embedded clustering (DEC), Cat2Vec, K-means, ambulance positioning, accident hotspots.
+
+
+Optimal_Ambulance_Positioning
+
+
+
+optimal_ambulance_positioning
+
+
+ambulance_positioning_prediction
+
+
+
+
+Fid	
+Temp	
+Wind	
+Date_Time	
+Age_band_of_driver	
+Sex_of_driver	
+Vehicle_driver_relation	
+Driving_experience	
+Type_of_vehicle	
+Area_accident_occured	
+Types_of_Junction	
+Type_of_collision	
+Number_of_vehicles_involved	
+Number_of_casualties	
+Vehicle_movement	
+Cause_of_accident	
+Accident_severity	
+Ambulace_Allocated	
+Ambulace_Pickedup
+Latitude	
+Longitude
+Prediction
+
+

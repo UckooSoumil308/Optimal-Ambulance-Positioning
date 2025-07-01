@@ -1,0 +1,127 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style7 {color: #FFFF00}
+        .style8 {color: #FFFF00; font-weight: bold; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p align="center" class="text-uppercase pull-center style1">View All Ambulance Positioning Prediction Type !!! </p>
+                            <hr>
+                            <div class="tweettext">
+                                 <table border="5" bordercolor="#FF00FF">
+
+
+                                   <tr>
+
+                                    <td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Fid</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Temp</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Wind</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Date_Time</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Age_band_of_driver</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Sex_of_driver</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Vehicle_driver_relation</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Driving_experience</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Type_of_vehicle</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Area_accident_occured</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Types_of_Junction</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Type_of_collision</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Number_of_vehicles_involved</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Number_of_casualties</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Vehicle_movement</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Cause_of_accident</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Accident_severity</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Ambulace_Allocated</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Ambulace_Pickedup</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Latitude</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Longitude</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style8"><span class="style7">Prediction</span></div></td>
+
+
+                      </tr>
+                            {% for object in objs %}
+                      <tr>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Fid}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Temp}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Wind}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Date_Time}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Age_band_of_driver}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Sex_of_driver}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Vehicle_driver_relation}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Driving_experience}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Type_of_vehicle}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Area_accident_occured}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Types_of_Junction}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Type_of_collision}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Number_of_vehicles_involved}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Number_of_casualties}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Vehicle_movement}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Cause_of_accident}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Accident_severity}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Ambulace_Allocated}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Ambulace_Pickedup}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Latitude}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Longitude}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Prediction}}</div></td>
+
+                        </tr>
+                                        {% endfor %}
+                      </table>
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
